@@ -533,6 +533,112 @@ nav ul li a:hover {
     font-weight: 400;
     margin-top: .4rem;
 }
+/* Pack */
+#packs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.packs-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.packs-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 320px;
+    margin: 0 1.5rem;
+}
+.packs-box-upper{
+    background-color: var(--yellow-lg);
+    color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+.packs-box-upper h2{
+    font-size: 3rem;
+}
+.packs-box-upper h1{
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+.packs-box-upper h1 sup{
+    font-size: 3rem;
+    font-weight: 300;
+    padding-right: .5rem;
+}
+.packs-box-upper h1 span{
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-left: .5rem;
+}
+.packs-box-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid rgb(217, 213, 213);
+    border-left: 1px solid rgb(217, 213, 213);
+    border-right: 1px solid rgb(217, 213, 213);
+}
+.packs-box a{
+    margin-top: 1.5rem;
+}
+.packs-box-desc ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.packs-box-desc ul li{
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: rgb(89, 89, 89);
+}
+.packs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    width: 470px;
+}
+.packs h2{
+    font-size: 1.3rem;
+    padding: .1rem .2rem;
+    background-color: var(--yellow-lg);
+    color: #fff;
+}
+.packs h1{
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 800;
+    margin: 1.5rem 0;
+}
+.packs p{
+    font-size: 2.5rem;
+    color: rgb(123, 123, 123);
+    font-weight: 400;
+}
+.packs h3{
+    font-size: 1.6rem;
+    margin-top: 1.7rem;
+}
+.packs a{
+    margin-top: 1.7rem;
+}
 @media screen and (max-width:1240px) {
     .offers-box {
         width: 289px;
@@ -562,6 +668,12 @@ nav ul li a:hover {
         margin: 0px .5rem;
         width: 34px;
         height: 33px;
+    }
+    .packs-box {
+        width: 255px;
+    }
+    .packs {
+        width: 390px;
     }
 }
 @media screen and (max-width:1140px) {
@@ -617,6 +729,19 @@ nav ul li a:hover {
     }
     .who-locat-box {
         width: 295px;
+    }
+    #packs{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .packs-flex{
+        margin-top: 5rem;
+    }
+    .packs-box {
+        width: 320px;
+    }
+    .packs {
+        width: calc(320px * 2 + 1.5rem * 4);
     }
 }
 
@@ -735,6 +860,18 @@ nav ul li a:hover {
 }
 
 
+@media screen and (max-width:720px) {
+    .packs {
+        width: 90%;
+    }
+    .packs-flex{
+        flex-wrap: wrap;
+    }
+    .packs-box {
+        width: 90%;
+        margin: 1.5rem 1.5rem;
+    }
+}
 @media screen and (max-width:670px) {
     .whoweare-img {
         width: 80%;
@@ -793,6 +930,14 @@ nav ul li a:hover {
     }
     .team-desc h1 {
         font-size: 3rem;
+    }
+    .packs h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .packs p {
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 }
 
