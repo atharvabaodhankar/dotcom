@@ -755,6 +755,162 @@ nav ul li a:hover {
     font-weight: 700;
     margin-top: 1.5rem;
 }
+/* Footer */
+#footer{
+    background-color: #131313;
+    padding: 6rem 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.footer-main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+    width: 350px;
+}
+.footer-main .logo{
+    margin-left: 0;
+}
+.footer-main p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin: 1rem 0;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.footer-social i{
+    font-size: 1.6rem;
+    color:var(--yellow-lg) ;
+    border: 1px solid var(--yellow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 .5rem;
+}
+.footer-social i:hover{
+    background-color: var(--yellow-lg);
+    color: #131313;
+    transform: translateY(-5px);
+}
+.footer-quick{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 1.5rem;
+}
+.footer-quick h1{
+    font-size: 2rem;
+    color: var(--yellow-lg);
+    margin-bottom: 2rem;
+}
+.footer-quick ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+}
+.footer-quick ul li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.6rem;
+    margin: .6rem 0;
+    cursor: pointer;
+}
+.footer-quick ul li i{
+    font-size: 1.6rem;
+    color: var(--yellow-lg);
+    margin-right: .5rem;
+}
+.footer-popular{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 1.5rem;
+}
+.footer-popular h1{
+    font-size: 2rem;
+    color: var(--yellow-lg);
+    margin-bottom: 2rem;
+}
+.footer-popular ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+}
+.footer-popular ul li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.6rem;
+    margin: .6rem 0;
+    cursor: pointer;
+}
+.footer-popular ul li i{
+    font-size: 1.6rem;
+    color: var(--yellow-lg);
+    margin-right: .5rem;
+}
+.footer-touch{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    padding: 0 1.5rem;
+    width: 300px;
+}
+.footer-touch h1{
+    font-size: 2rem;
+    color: var(--yellow-lg);
+}
+.footer-touch p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin: 1rem 0;
+}
+.footer-touch ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 1rem;
+}
+.footer-touch ul li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    line-height: 2.5rem;
+}
+.footer-touch ul li i{
+    font-size: 1.6rem;
+    color: var(--yellow-lg);
+    margin-right: 1rem;
+}
 @media screen and (max-width:1240px) {
     .offers-box {
         width: 289px;
@@ -827,6 +983,15 @@ nav ul li a:hover {
     }
     .team-box {
         width: 200px;
+    }
+    .footer-main {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: left;
+        color: #fff;
+        width: 284px;
     }
 }
 
@@ -938,6 +1103,25 @@ nav ul li a:hover {
     }
     .blog-box {
         width: 560px;
+    }
+    #footer{
+        flex-wrap: wrap;
+    }
+    .footer-main {
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+    .footer-touch {
+        width: 90%;
+        margin-top: 2rem;
+    }
+    .footer-quick {
+        width: 40%;
+        margin: 2rem 1.5rem;
+    }
+    .footer-popular {
+        width: 40%;
+        margin: 2rem 1.5rem;
     }
 }
 
@@ -1122,5 +1306,11 @@ nav ul li a:hover {
     }
     .team-box-img {
         height: 245px;
+    }
+    .footer-quick {
+        width: 80%;
+    }
+    .footer-popular {
+        width: 80%;
     }
 }
